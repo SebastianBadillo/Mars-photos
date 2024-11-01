@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Mars Rover Photos</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <h2>Mars Rover Photos</h1>
+                <div class="controls">
+                    <div>
+                        <label for="date">Earth Date:</label>
+                        <input type="text" id="date" value="2015-7-2" min="1">
+                    </div>
+
+                    <button id="buscar">Find</button>
+                </div>
+                <div class="list-header">
+                    <span>ID</span>
+                    <span>Rover Name</span>
+                    <span>Camera</span>
+                    <span>Details</span>
+                </div>
+                <ul id="miLista">
+
+                </ul>
+                <div>
+                    <button id="prev" class="btn black">Previous</button>
+                    <button id="next" class="btn black">Next</button>
+                </div>
+        </div>
+        <div class="container2">
+            <h2> Photo Detail</h2>
+            <div id="image-container">
+            </div>
+            <div class="detailInfo">
+                <span><b>Id:</b> <span id="idPhoto"></span></span>
+                <span><b>Martian Sol:</b> <span id="solPhoto"></span></span>
+                <span> <b>Earth date:</b> <span id="datePhoto"></span></span>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

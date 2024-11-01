@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+}
+/*
+ Containers
+*/
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.container1 {
+  flex: 1;
+
+  margin: 0 auto;
+  text-align: center;
+}
+.container2 {
+  flex: 1;
+}
+
+/*
+  Form
+*/
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+#date {
+  max-width: 100px;
+}
+
+/* Encabezado tabla*/
+.list-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #000; /* Color de fondo negro */
+  color: white; /* Texto en blanco */
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+/* Diseño de la tabla*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  border: 1px solid #ddd;
+  align-items: center;
+  margin: 5px 0;
+}
+
+ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* ul li button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+} */
+
+ul li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Imagen*/
+#image-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 10px;
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Diseño botones*/
+
+button {
+  min-width: 100px;
+  cursor: pointer;
+}
+
+#buscar {
+  background-color: rgb(32, 106, 181);
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  margin: unset;
+}
+.btn {
+  background-color: rgb(32, 106, 181);
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  margin: unset;
+  max-width: 100px;
+  cursor: pointer;
+  justify-self: center;
+}
+.btn:hover {
+  background-color: rgb(32, 106, 181);
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+  margin: unset;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin: unset;
+}
+
+/* Deseño informacion de la foto*/
+.detailInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
